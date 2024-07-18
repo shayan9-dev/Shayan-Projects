@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+.first-link{
+    text-decoration: none;
+}
+.cont{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0 2.5em;
+    
+}
+.logo{
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #2b2222;
+}
+.border{
+    border-bottom: 2px solid orangered;
+}
+span{
+    color: orangered;
+}
+ul {
+    display: flex;
+    gap: 2em;
+}
+ul li{
+    list-style-type: none;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2b2222;
+}
+.btn{
+    background-color: rgb(219, 58, 9);
+    padding: 0.4em 2.5em;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    text-decoration: none;
+}
+.btn2{
+    background-color: orangered;
+    padding: 0.4em 1.5em;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    text-decoration: none;
+    margin: 0 1em;
+}
+ul li a:hover{
+    border-bottom: 2px solid orangered;
+}
+.main-hero{
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+}
+.main-second{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    padding :0 2.5em;
+}
+.first-cont{
+    width: 15%;
+    height: 70%;
+    background: rgba(94, 82, 82, 0.37);
+    padding: 0.4em 0.6em;
+}
+.upper{
+    width: 100%;
+    display: flex;
+    
+}
+.upper-class{
+    padding: 0 0.6em;
+    background: orangered;
+    color: #fff;
+}
+.mid-class{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+}
+.mid-class a{
+    text-decoration: none;
+    color: #2b2222;
+    margin: 0.2em;
+}
+.lower{
+    margin-top: 25em;
+    margin-bottom: 6em;
+    display: flex;
+}
+.lower h3{
+    font-size: 1em;
+}
+.second-cont{
+    width: 100%;
+    /* background: #2b2222; */
+    margin-left: 1em;
+    padding: 0 1em;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.cont-red{
+    width: 18%;
+    height: 16em;
+    margin: 0.6em 0.6em;
+    overflow: hidden;
+    object-fit: cover;
+}
+.image{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em 0.4em;
+    color: white;
+    background: orangered;
+}
+.text h3{
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding: 0 0.3em;
+    color: rgba(255, 255, 255, 0.714);
+}
+.text h4{
+    margin-bottom: 0.2em;
+    object-fit: cover;
+    font-size: 0.7em;
+    padding: 0 0.3em;
+    color: rgba(255, 255, 255, 0.921);
+}
+.addtocart{
+    background: white;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    padding: 0.5em 0.8em;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 1em;
+    cursor: pointer;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+    background: rgb(48, 45, 45);
+    color: #fff;
+}
+.foot-cont{
+    display: flex;
+    margin-top: 2em;
+    padding: 2em 2em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.first-foot{
+    width: 20em;
+    /* padding: 0.3em 0.3em; */
+
+}
+.location{
+    width: 100%;
+
+}
+.location h2{
+    font-size: 1.1em;
+    color: hsl(0, 8%, 63%);
+    margin-bottom: 0.8em;
+    font-weight: 600;
+}
+
+.location h3{
+    font-size: 1em;
+    color: hsl(0, 8%, 63%);
+    font-weight: 600;
+}
+.second-foot{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 6em; */
+
+}
+.second-foot h1{
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+.second-foot ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.second-foot ul li a{
+    font-size: 0.8em;
+    font-weight: 800;
+    color: #ffffff88;
+}
+
+
+.third-foot{
+    display: flex;
+    flex-direction: column;
+
+}
+.third-foot h1{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+.third-foot ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.third-foot ul li a{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #ffffff79;
+}
+.bottom-line{
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(71, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info{
+    justify-content: center;
+    display: flex;
+    padding: 2em 2em;
+    align-items: center;
+}
+

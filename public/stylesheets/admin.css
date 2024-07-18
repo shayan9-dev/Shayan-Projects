@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+.first-link{
+    text-decoration: none;
+}
+.cont{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0 2.5em;
+    
+}
+.logo{
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #2b2222;
+}
+.border{
+    border-bottom: 2px solid orangered;
+}
+span{
+    color: orangered;
+}
+ul {
+    display: flex;
+    gap: 2em;
+}
+ul li{
+    list-style-type: none;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2b2222;
+}
+.btn{
+    background-color: rgb(219, 58, 9);
+    padding: 0.4em 2.5em;
+    color: #fff;
+    font-weight: 900;
+    width: 12em;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    text-decoration: none;
+    margin-top: 2em;
+}
+.btn2{
+    background-color: orangered;
+    padding: 0.4em 1.5em;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    text-decoration: none;
+    margin: 0 1em;
+}
+ul li a:hover{
+    border-bottom: 2px solid orangered;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container{
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    color: orangered;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.first-item{
+    font-size: 1em;
+    margin-top: 2em;
+    padding: 0.4em 0.7em;
+    color: blue;
+  
+}
+.second{
+    display: flex;
+    gap: 3em;
+    margin-left: 0.6em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.second input{
+    width: 16em;
+    height: 2.9em;
+    padding: 0.6em;
+}
+textarea{
+    margin-left: 0.6em;
+    resize: none;
+    height: 14em;
+    padding: 0.6em;
+}

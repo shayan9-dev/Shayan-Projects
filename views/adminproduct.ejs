@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/Artboard 1.png" />
+    <title>Admin-Products</title>
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <style>
+        .none{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="cont">
+            <a href="/owner/admin" class="first-link"><div class="logo">Tee<span>Feet</span> </div></a>
+            <ul>
+                <li><a href="/owner/admin"  >Admin</a></li>
+                <li><a href="/owner/products" class="border">Products</a></li>
+                <li><a href="/owner/order">Orders</a></li>
+                <li><a href="/owner/message">Messages</a></li>
+            </ul>>
+        </nav>
+    </header>
+            <main>
+                <div class="main-hero">
+                            <div class="main-second">
+                                <div class="first-cont">
+                                    <div class="upper">
+                                        <h3>Sort by:</h3>
+                                        <h3 class="upper-class">Popular</h3>
+                                    </div>
+                                    <div class="mid-class">
+                                        <a href="">New products</a>
+                                        <a href="">All Products</a>
+                                        <a href="">Discounted Products</a>
+                                    </div>
+                                    <div class="lower">
+                                        <h3>Filter by:</h3>
+                                        <h3 class="upper-class">Popular</h3>
+                                    </div>
+                                </div>
+                                <div class="second-cont">
+
+                                    <% products.forEach(function(product){ %>
+                                     <div class="cont-red">
+                                      <a class="none" href="/user/view/<%=product._id%>">
+                                        <div class="image">
+                                            <img src="data:image/jpeg;base64,<%= product.image.toString('base64')%>" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="price">
+                                                <h4><%=product.name%></h4>
+                                                <h3>Rs :<%=product.price%></h3>
+                                            </div>
+                                            <a class="none" href="/product/productdel/<%=product._id%>" ><div class="addtocart">Del</div></a>
+                                        </div>
+                                      </a>
+
+                                    </div>
+                                   <% }) %>
+                                   
+    
+                               
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                </div>
+            </main>
+            <footer>
+                <div class="foot-cont">
+                    <div class="first-foot">
+                        <div class="location">
+                            <h2>Rawalpindi,Pakistan</h2>
+                            <h3>+923130510867</h3>
+                        </div>
+                    </div>
+                    <div class="second-foot">
+                        <h1>Primary Pages</h1>
+                        <ul>
+                            <li><a href="">Cash on delivery Terms and Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Return and Exchange Procedure</a></li>
+                        </ul>
+                    </div>
+                    <div class="third-foot">
+                        <h1>Information links</h1>
+                        <ul>
+                            <li><a href="/user/home">Home</a></li>
+                            <li><a href="/user/products">Products</a></li>
+                            <li><a href="/user/cart">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-line"></div>
+                <div class="info">
+               <p> &copy 2024 All right reserved by TeeFeet</p>
+                </div>
+            </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/Artboard 1.png" />
+    <title>Messages</title>
+    <link rel="stylesheet" href="/stylesheets/order.css">
+    <style>
+      .red{
+        color: red;
+      }
+      .none{
+        text-decoration: none;
+        background: #000;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0.4em;
+        margin-left: 0.5em;
+        padding: 0.4em 0.6em;
+        border: 2px solid transparent;
+        border-radius: 0.7em;
+      }
+      .msgcontainer{
+        width: 100%;
+        padding: 4em 4em;
+        display: flex;
+        flex-wrap: wrap;
+      
+      }
+      .msg{
+        position: relative;
+        width: 15em;
+        margin: 1em 1em;
+        height: 15em;
+        overflow: hidden;
+        background: rgba(213, 109, 71, 0.844);
+        padding: 0.2em 0.3em;
+        border: 2px solid transparent;
+        border-radius: 1em;
+        
+      }
+      .msg h1{
+        font-size: 1em;
+        color: white;
+      }
+      .msg h2{
+        font-size: 0.8em;
+        object-fit: cover;
+        margin-top: 0.5em;
+        color: blue;
+      }
+      .msg p{
+        font-size: 0.7em;
+        margin-top: 2em;
+      }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="cont">
+            <a href="/owner/admin" class="first-link"><div class="logo">Tee<span>Feet</span> </div></a>
+            <ul>
+                <li><a href="/owner/admin"  >Admin</a></li>
+                <li><a href="/owner/products">Products</a></li>
+                <li><a href="/owner/order" >order</a></li>
+                <li><a href="/owner/message" class="border">Messages</a></li>
+            </ul>>
+        </nav>
+    </header>
+    <main>
+        <div class="msgcontainer">
+            <% messages.forEach(function(msg){ %>
+
+                <div class="msg">
+                    <h1><%=msg.name%></h1>
+                    <h2><%=msg.email%></h2>
+                    <p><%=msg.message%></p>
+
+                    <a class="none" href="/owner/msgdel/<%=msg._id%>">Del</a>
+                </div>
+           <% }) %>
+            
+        </div>
+
+
+        
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+.first-link{
+    text-decoration: none;
+}
+.cont{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0 2.5em;
+    
+}
+.logo{
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #2b2222;
+}
+.border{
+    border-bottom: 2px solid orangered;
+}
+span{
+    color: orangered;
+}
+ul {
+    display: flex;
+    gap: 2em;
+}
+ul li{
+    list-style-type: none;
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2b2222;
+}
+.btn{
+    background-color: rgb(219, 58, 9);
+    padding: 0.4em 2.5em;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    text-decoration: none;
+}
+.btn2{
+    background-color: orangered;
+    padding: 0.4em 1.5em;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    text-decoration: none;
+    margin: 0 1em;
+}
+ul li a:hover{
+    border-bottom: 2px solid orangered;
+}
+
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.cart-cont{
+    width: 80%;
+    padding: 1em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10em;
+    
+    
+}
+.cart{
+    width: 10em;
+    height: 13em;
+    border: 2px solid orangered;
+    border-radius: 2em;
+    overflow: hidden;
+    margin: 0 1em 1em;
+
+}
+.image{
+    width: 100%;
+    height: 6em;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height:100%;
+    object-fit: center;
+
+}
+.price-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart h1{
+    font-size: 0.9em;
+    margin: 0.6em;
+}
+.cart h2{
+    font-size: 0.8em;
+    color: black;
+    margin: 0.6em;
+}
+.cart a{
+    text-decoration: none;
+    background: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    padding: 0.3em 0.4em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+}
+.note{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inputs{
+    width: 16em;
+    padding: 0.4em 0.2em;
+}
+
+
+footer{
+    width: 100%;
+    background: rgb(48, 45, 45);
+    color: #fff;
+    margin-top:14em ;
+}
+.foot-cont{
+    display: flex;
+    margin-top: 2em;
+    padding: 2em 2em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.first-foot{
+    width: 20em;
+    /* padding: 0.3em 0.3em; */
+
+}
+.location{
+    width: 100%;
+
+}
+.location h2{
+    font-size: 1.1em;
+    color: hsl(0, 8%, 63%);
+    margin-bottom: 0.8em;
+    font-weight: 600;
+}
+
+.location h3{
+    font-size: 1em;
+    color: hsl(0, 8%, 63%);
+    font-weight: 600;
+}
+.second-foot{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 6em; */
+
+}
+.second-foot h1{
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+.second-foot ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.second-foot ul li a{
+    font-size: 0.8em;
+    font-weight: 800;
+    color: #ffffff88;
+}
+
+
+.third-foot{
+    display: flex;
+    flex-direction: column;
+
+}
+.third-foot h1{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+.third-foot ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.third-foot ul li a{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #ffffff79;
+}
+.bottom-line{
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(71, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info{
+    justify-content: center;
+    display: flex;
+    padding: 2em 2em;
+    align-items: center;
+}
+

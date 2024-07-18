@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/Artboard 1.png" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/stylesheets/admin.css">
+</head>
+<body>
+    <header>
+        <nav class="cont">
+            <a href="/owner/admin" class="first-link"><div class="logo">Tee<span>Feet</span> </div></a>
+            <ul>
+                <li><a href="/owners/admin" class="border" >Admin</a></li>
+                <li><a href="/owner/products">Products</a></li>
+                <li><a href="/owner/order">Orders</a></li>
+                <li><a href="/owner/message">Messages</a></li>
+            </ul>>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <h1 class="heading">Create a New Product</h1>
+            <form action="/product/create" method="post" enctype="multipart/form-data">
+
+                    <h3>Product Image</h3>
+                
+                    <input type="file" value="Choose image" class="first-item" name="image">
+                
+            
+                <div class="second">
+                    <input type="text" placeholder="Product Tiltle" name="name">
+                    <input type="text" placeholder="Product Price" name="price">
+                    
+                </div>
+                    <Textarea name="desc" placeholder="Product Description"></Textarea>
+                    <input type="submit" value="Create" class="btn">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

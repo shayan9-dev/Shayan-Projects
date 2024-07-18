@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/Artboard 1.png" />
+	<link rel="stylesheet" href="/stylesheets/home2.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="cont">
+            <a href="/user/home" class="first-link"><div class="logo">Tee<span>Feet</span> </div></a>
+            <ul>
+                <li><a href="/user/home" class="border" >Home</a></li>
+                <li><a href="/user/products">Products</a></li>
+                <li><a href="/user/contact">Contact us</a></li>
+            </ul>
+            <div class="profile">
+                <a href="/user/cart" class="btn2">Cart</a>
+                <a href="/user/logout" class="btn">Logout</a>
+            </div>
+        </nav>
+    </header>
+	<section id="summer-collection">
+		<div class="container">
+			<div class="sc-content">
+				<h1>Welcome to TeeFeet</h1>
+				<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+					has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<a href="/user/products">discover now</a> </div>
+			<div class="sc-media">
+				<div class="sc-media-bg"> <img src="/images/picture.png" alt="sc-image" /> </div>
+			</div>
+		</div>
+	</section>
+	<section id="products">
+		<div class="container">
+			<div class="products-header">
+				<h2>popular products</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+            <% products.forEach(function(product){ %>
+                <a href="/user/products">
+                    <div class="product product-1">
+                        <figure> <img src="data:image/jpeg;base64,<%= product.image.toString('base64')%>" alt="product-image">
+                            <figcaption><%=product.name%></figcaption>
+                            <figcaption>Rs <%= product.price%></figcaption>
+                        </figure>
+                    </div>
+                </a>
+                
+           <% }) %>
+			
+		</div>
+	</section>
+	<!-- <section id="collections">
+		<div class="container">
+			<div class="c-1">
+				<div class="c-1-image-holder"> <img src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/suit-collections/suit-collection-img_3x.jpg" alt="image"> </div>
+			</div>
+			<div class="c-2">
+				<h2>featured collection</h2>
+				<hr />
+				<div class="c-2-image-holder"> <img class="left" src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412552/E-commerce%20landing%20page/suit-collections/collection-2-img_3x.jpg" alt=""><img class="right" src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412552/E-commerce%20landing%20page/suit-collections/collection-1-img_3x.jpg"
+					 alt=""></div>
+				<a class="none" href="/user/products"><p class="button" >view all collections</p></a>
+			</div>
+		</div>
+	</section> -->
+
+    <footer>
+        <div class="foot-cont">
+            <div class="first-foot">
+                <div class="location">
+                    <h2>Rawalpindi,Pakistan</h2>
+                    <h3>+923130510867</h3>
+                </div>
+            </div>
+            <div class="second-foot">
+                <h1>Primary Pages</h1>
+                <ul>
+                    <li><a href="">Cash on delivery Terms and Condition</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Return and Exchange Procedure</a></li>
+                </ul>
+            </div>
+            <div class="third-foot">
+                <h1>Information links</h1>
+                <ul>
+                    <li><a href="/user/home">Home</a></li>
+                    <li><a href="/user/products">Products</a></li>
+                    <li><a href="/user/cart">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-line"></div>
+        <div class="info">
+       <p> &copy 2024 All right reserved by TeeFeet</p>
+        </div>
+    </footer>
+</body>
+
+</html>

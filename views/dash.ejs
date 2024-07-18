@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/Artboard 1.png" />
+    <title>Product</title>
+    <link rel="stylesheet" href="/stylesheets/dash.css">
+</head>
+<body>
+    <a href="/user/products" class="back">Back to home</a>
+    <main>
+         <div class="container">
+            <div class="cont-red">
+                    <div class="main-cont">
+                        <img src="data:image/jpeg;base64,<%= product.image.toString('base64')%>" alt="image">
+                      <div class="sec-cont">
+                        <h4><%=product.name%></h4>
+                        <h3>Rs :<%=product.price%></h3>
+                        <a class="none" href="/user/checkout/<%=product._id%>" ><div class="addtocart add">Buy Now</div></a>
+                    <a class="none" href="/user/cart/<%=product._id%>" ><div class="addtocart">Add to cart</div></a>
+                      </div>
+                    </div>
+                <div class="desc">
+                    <h1>Decription</h1>
+                    <p><%=product.desc%></p>
+                </div>
+
+            </div>
+
+         </div>
+    </main>
+   
+</body>
+</html>
