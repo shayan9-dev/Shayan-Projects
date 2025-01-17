@@ -7,6 +7,9 @@ const router = express.Router();
 router.get("/login",function(req,res,next){
     res.render("login")
 })
+router.put("/login/logout",function(req,res){
+    res.send("everything is workiing and good")
+})
 
 router.get("/reg",function(req,res,next){
     res.render("Register")
