@@ -1,15 +1,17 @@
-const express = require ("express");
+import express from "express";
+import http from "http"
+import multer from "multer";
+import path from "path";
+import db from "./config/mongoose-connection.js";
+import usersRouter from "./routes/userRouter.js";
+import productsRouter from "./routes/productRouter.js";
+import ownersRouter from "./routes/ownerRouter.js";
+import index from "./routes/index.js";
+import upload from "./config/multer-config.js";
+
 const app = express();
-const multer = require("multer")
-const path = require("path");
-const db = require("./config/mongoose-connection")
-const usersRouter = require("./routes/userRouter")
-const productsRouter = require("./routes/productRouter")
-const ownersRouter = require("./routes/ownerRouter")
-const index = require("./routes/index")
-const upload = require("./config/multer-config")
-
-
+const server = http.createServer(app);
+const port = process.env.PORT || 2000;
 
 app.set("view engine","ejs")
 app.use(express.json())
@@ -25,4 +27,6 @@ app.use("/product",productsRouter)
 
 
 
-app.listen(3000);
+server.listen(port, (req,res) => {
+    console.log(`Server is running on http://localhost:${port}`)    
+});

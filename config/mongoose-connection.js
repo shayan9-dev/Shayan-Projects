@@ -1,4 +1,4 @@
-const mongoose=require("mongoose");
+import mongoose from "mongoose";
 
 mongoose
 .connect("mongodb://127.0.0.1:27017/E-commerence")
@@ -9,4 +9,4 @@ mongoose
     console.log(err)
 })
 
-module.exports=mongoose.connection;
+export default connection =mongoose.connection;
